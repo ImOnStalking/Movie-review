@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MOVIE SPHERE - We're the Millers Review</title>
+    <title>MOVIE SPHERE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -11,7 +11,7 @@
   <body>
     <!-- nav -->
     <section>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 sticky-top" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
           <div class="collapse navbar-collapse text-white d-flex justify-content-center" id="navbarSupportedContent">
             <a class="navbar-brand me-3" href="index.html">
@@ -61,95 +61,76 @@
     </section>
     <!-- nav end -->
 
-    <!-- Movie Review Section -->
-    <section class="py-5">
+    <!-- welcome -->
+    <section class="hero bg-dark text-white py-5">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-4">
-            <img src="Images/comedy/comedy7.jpg" class="img-fluid rounded" alt="We're the Millers Poster">
+        <div class="row align-items-center pt-5">
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold">Welcome to MOVIE SPHERE</h1>
+            <p class="lead">Discover, review, and discuss the latest movies. Your ultimate destination for cinematic insights.</p>
+            <a href="#featured" class="btn btn-primary btn-lg">Explore Movies</a>
           </div>
-          <div class="col-lg-8">
-            <h1 class="mb-3">We're the Millers (2013)</h1>
-            <div class="mb-3">
-              <span class="badge bg-primary me-2">Comedy</span>
-              <span class="badge bg-info">R</span>
-            </div>
-            <p class="lead">Directed by Rawson Marshall Thurber | Starring Jason Sudeikis, Jennifer Aniston, Emma Roberts, Will Poulter, Ed Helms, Nick Offerman, Kathryn Hahn, Molly Shannon</p>
-            <div class="mb-3">
-              <strong>Runtime:</strong> 110 minutes<br>
-              <strong>Release Date:</strong> August 7, 2013<br>
-              <strong>Box Office:</strong> $270 million worldwide
-            </div>
-            <div class="mb-4">
-              <h4>Our Rating: <span class="badge bg-success">7/10</span></h4>
-              <div class="progress mb-2" style="height: 20px;">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="col-lg-6">
+            <img src="Images/logo.png" alt="Hero Movie" class="img-fluid rounded ">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- welcome end -->
+
+    <!-- Featured Movies  -->
+    <section id="featured" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Featured Movies</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img src="Images/action/action 8.jpg" class="card-img-top" alt="Movie 1">
+              <div class="card-body">
+                <h5 class="card-title">FAST X</h5>
+                <p class="card-text">Dom Toretto and his family are targeted by the vengeful son of a Brazilian drug lord.</p>
+                <a href="fastx-review.html" class="btn btn-primary">Read Review</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-12">
-            <h2 class="mb-4">Movie Review</h2>
-            <p><strong>We're the Millers</strong> stars Jason Sudeikis as a small-time pot dealer who poses as a family man to smuggle drugs across the border. The film is a raunchy comedy with plenty of laughs and strong performances.</p>
-
-            <p>The chemistry between the cast, especially Sudeikis and Aniston, makes this a standout comedy. It's crude but hilarious.</p>
-
-            <h3>Strengths</h3>
-            <ul>
-              <li><strong>Cast:</strong> Excellent ensemble.</li>
-              <li><strong>Humor:</strong> Raunchy and funny.</li>
-              <li><strong>Pacing:</strong> Keeps you engaged.</li>
-            </ul>
-
-            <h3>Weaknesses</h3>
-            <ul>
-              <li><strong>Raunchy:</strong> Not for all audiences.</li>
-              <li><strong>Plot:</strong> Predictable.</li>
-            </ul>
-
-            <h3>Final Thoughts</h3>
-            <p>We're the Millers is a fun, laugh-out-loud comedy with great performances. A solid R-rated comedy.</p>
-
-            <div class="mt-4">
-              <h4>Cast Highlights</h4>
-              <ul class="list-inline">
-                <li class="list-inline-item"><strong>Jason Sudeikis</strong> as David Clark</li>
-                <li class="list-inline-item"><strong>Jennifer Aniston</strong> as Sarah Miller</li>
-                <li class="list-inline-item"><strong>Emma Roberts</strong> as Casey Mathis</li>
-              </ul>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img src="Images/comedy/comedy3.jpg" class="card-img-top" alt="Movie 2">
+              <div class="card-body">
+                <h5 class="card-title">Scary Movie</h5>
+                <p class="card-text">A group of teenagers encounter a killer while babysitting, leading to hilarious parodies of horror films.</p>
+                <a href="#" class="btn btn-primary">Read Review</a>
+              </div>
             </div>
-
-            <div class="mt-4">
-              <a href="comedy.html" class="btn btn-primary">Back to Comedy Movies</a>
-              <a href="Movie-list.html" class="btn btn-secondary ms-2">View All Movies</a>
-              <a href="submit-review.html" class="btn btn-success ms-2">Write a Review</a>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img src="Images/Sci-fi/Sci-fi4.jpg" class="card-img-top" alt="Movie 3">
+              <div class="card-body">
+                <h5 class="card-title">Pacific Rim</h5>
+                <p class="card-text">Giant robots pilot by humans fight massive sea creatures known as Kaiju.</p>
+                <a href="#" class="btn btn-primary">Read Review</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- end Movie Review Section -->
+    <!-- end featured move -->
 
-    <!-- User Reviews Section -->
+    <!-- Latest Reviews  -->
     <section class="bg-light py-5">
       <div class="container">
-        <h2 class="mb-4">User Reviews</h2>
+        <h2 class="text-center mb-4">Latest Reviews</h2>
         <div class="row">
           <div class="col-md-6 mb-4">
             <div class="card">
               <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                  <h5 class="card-title">"Hilarious Road Trip!"</h5>
-                  <div class="text-warning">
-                    ★★★★★
-                  </div>
-                </div>
-                <p class="card-text">Jason Sudeikis and Jennifer Aniston are perfect together. Non-stop laughs.</p>
+                <h5 class="card-title">Review: Oppenheimer</h5>
+                <p class="card-text">"A masterful biographical thriller that explores the life of J. Robert Oppenheimer..."</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <small class="text-muted">By ComedyLover</small>
-                  <small class="text-muted">3 days ago</small>
+                  <small class="text-muted">By John Doe</small>
+                  <span class="badge bg-success">9/10</span>
                 </div>
               </div>
             </div>
@@ -157,27 +138,108 @@
           <div class="col-md-6 mb-4">
             <div class="card">
               <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                  <h5 class="card-title">"Raunchy Fun"</h5>
-                  <div class="text-warning">
-                    ★★★★☆
-                  </div>
-                </div>
-                <p class="card-text">Over-the-top and crude, but entertaining. Will Poulter steals scenes.</p>
+                <h5 class="card-title">Review: Barbie</h5>
+                <p class="card-text">"A fun and satirical take on modern society through the eyes of a doll..."</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <small class="text-muted">By MovieFan</small>
-                  <small class="text-muted">1 week ago</small>
+                  <small class="text-muted">By Jane Smith</small>
+                  <span class="badge bg-warning">7/10</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="text-center mt-4">
-          <a href="submit-review.html" class="btn btn-primary btn-lg">Share Your Review</a>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Review: Dune: Part Two</h5>
+                <p class="card-text">"An epic continuation that expands the universe with stunning visuals and intense action..."</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">By Alex Johnson</small>
+                  <span class="badge bg-success">9/10</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Review: The Batman</h5>
+                <p class="card-text">"A dark, brooding take on the Caped Crusader with a compelling mystery plot..."</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">By Emily Davis</small>
+                  <span class="badge bg-success">8/10</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Review: Avatar: The Way of Water</h5>
+                <p class="card-text">"A visually spectacular sequel that dives deeper into Pandora's wonders..."</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">By Michael Lee</small>
+                  <span class="badge bg-success">8.5/10</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="submit-review.html"><button class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Create A Movie Review</button></a>
+          </div>
         </div>
       </div>
     </section>
-    <!-- end User Reviews Section -->
+    <!-- end Latest Reviews  -->
+
+    <!-- Categories  -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Browse by Category</h2>
+        <div class="row text-center">
+          <div class="col-md-3 mb-3">
+            <a href="action.html" class="text-decoration-none">
+              <div class="card h-100">
+                <div class="card-body">
+                  <i class="bi bi-film display-4 text-primary"></i>
+                  <h5 class="card-title">Action</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 mb-3">
+            <a href="romance.html" class="text-decoration-none">
+              <div class="card h-100">
+                <div class="card-body">
+                  <i class="bi bi-heart display-4 text-danger"></i>
+                  <h5 class="card-title">Romance</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 mb-3">
+            <a href="sci-fi.html" class="text-decoration-none">
+              <div class="card h-100">
+                <div class="card-body">
+                  <i class="bi bi-rocket-takeoff display-4 text-success"></i>
+                  <h5 class="card-title">Sci-Fi</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 mb-3">
+            <a href="comedy.html" class="text-decoration-none">
+              <div class="card h-100">
+                <div class="card-body">
+                  <i class="bi bi-emoji-laughing display-4 text-warning"></i>
+                  <h5 class="card-title">Comedy</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Categories Section -->
 
     <!-- Footer -->
     <section>
@@ -223,6 +285,7 @@
 
                 <!-- Spotify -->
                 <a class="btn btn-primary btn-floating m-1" style="background-color: #0a7e00" href="https://open.spotify.com/" target="_blank" role="button"><i class="bi bi-spotify"></i></a>
+
               </div>
             </div>
             <!--Grid row-->
@@ -271,7 +334,7 @@
                     </div>
                     <div class="mb-3 form-check">
                       <input type="checkbox" class="form-check-input" id="rememberMe">
-                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                      <label class="form-check-label" for="rememberMe">Remember me</label>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Login</button>
                   </form>
@@ -328,7 +391,7 @@
                     </div>
                     <div class="mb-3 form-check">
                       <input type="checkbox" class="form-check-input" id="agreeTerms">
-                        <label class="form-check-label" for="agreeTerms">I agree to the terms and conditions</label>
+                      <label class="form-check-label" for="agreeTerms">I agree to the terms and conditions</label>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Register</button>
                   </form>
