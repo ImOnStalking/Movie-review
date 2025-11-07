@@ -1,0 +1,74 @@
+/* image border */
+.navbar-brand img {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+/* end */
+
+/* ----------------------------------------------------------------------- */
+
+/* dropdown profile image styling */
+.navbar .dropdown-toggle img {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 56px;
+    object-fit: cover;
+}
+/* end */
+
+/* ----------------------------------------------------------------------- */
+
+/* search bar styling */
+.search-input {
+    width: 700px;
+}
+
+/* Responsive search bar */
+@media (max-width: 767px) {
+    .search-input {
+        width: 100% !important;
+    }
+}
+/* end */
+
+/* ----------------------------------------------------------------------- */
+
+/* animation for navigation on hover */
+.nav-link {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+/* end */
+
+/* ----------------------------------------------------------------------- */
+
+/* Modal backdrop blur */
+.modal-backdrop {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+/* end */
+
+/* ----------------------------------------------------------------------- */
+
+/* Center modal in the middle of the screen on larger screens */
+@media (min-width: 720px) {
+  .modal-dialog {
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
+/* end */
+
+/* ----------------------------------------------------------------------- */
+
+
+    

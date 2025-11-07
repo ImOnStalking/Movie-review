@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MOVIE SPHERE - Submit Movie Review</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <!-- nav -->
+    <section>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse text-white d-flex justify-content-center" id="navbarSupportedContent">
+            <a class="navbar-brand me-3" href="home-page.html">
+              <img src="Images/logo.png" alt="Logo" width="70" height="66">
+            </a>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-list"> MENU</i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-white" href="Movie-list.html"><i class="bi bi-film">Movies</i></a></li>
+                  <li><a class="dropdown-item text-white" href="aboutus.html"><i class="bi bi-people"> ABOUT US</i></a></li>
+                  <li><a class="dropdown-item text-white" href="contacts.html"><i class="bi bi-person-lines-fill"> CONTACT US</i></a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-tags"> CATEGORIES</i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-white" href="action.html"><i class="bi bi-film">Action</i></a></li>
+                  <li><a class="dropdown-item text-white" href="comedy.html"><i class="bi bi-emoji-laughing">Comedy</i></a></li>
+                  <li><a class="dropdown-item text-white" href="romance.html"><i class="bi bi-heart">Romance</i></a></li>
+                  <li><a class="dropdown-item text-white" href="sci-fi.html"><i class="bi bi-rocket-takeoff">Sci-Fi</i></a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex me-3 px-3" role="search">
+              <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <img src="Images/profile.jpg" alt="">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item text-center" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a></li>
+                  <li><a class="dropdown-item text-center" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">REGISTER</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- nav end -->
+
+    <!-- Submit Review Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h1 class="text-center mb-4">Submit Your Movie Review</h1>
+            <p class="text-center mb-5">Share your thoughts on movies you've watched. Your reviews help other cinephiles discover great films!</p>
+
+            <form id="reviewForm">
+              <div class="mb-4">
+                <label for="movieSelect" class="form-label">Select Movie</label>
+                <select class="form-select" id="movieSelect" required>
+                  <option value="">Choose a movie...</option>
+                  <optgroup label="Action">
+                    <option value="fastx">Fast X (2023)</option>
+                    <option value="madmax">Mad Max: Fury Road</option>
+                    <option value="johnwick">John Wick</option>
+                    <option value="diehard">Die Hard</option>
+                    <option value="darkknight">The Dark Knight</option>
+                    <option value="avengers">Avengers: Endgame</option>
+                    <option value="gladiator">Gladiator</option>
+                    <option value="inception">Inception</option>
+                    <option value="matrix">The Matrix</option>
+                    <option value="missionimpossible">Mission: Impossible - Fallout</option>
+                  </optgroup>
+                  <optgroup label="Comedy">
+                    <option value="hangover">The Hangover</option>
+                    <option value="superbad">Superbad</option>
+                    <option value="groundhog">Groundhog Day</option>
+                    <option value="budapest">The Grand Budapest Hotel</option>
+                    <option value="booksmart">Booksmart</option>
+                    <option value="palmsprings">Palm Springs</option>
+                    <option value="mitchells">The Mitchells vs. the Machines</option>
+                    <option value="freeguy">Free Guy</option>
+                    <option value="everything">Everything Everywhere All at Once</option>
+                  </optgroup>
+                  <optgroup label="Romance">
+                    <option value="notebook">The Notebook</option>
+                    <option value="pride">Pride and Prejudice</option>
+                    <option value="lalaland">La La Land</option>
+                    <option value="titanic">Titanic</option>
+                    <option value="crazyrich">Crazy Rich Asians</option>
+                    <option value="fault">The Fault in Our Stars</option>
+                    <option value="loveactually">Love Actually</option>
+                    <option value="toall">To All the Boys I've Loved Before</option>
+                    <option value="bigsick">The Big Sick</option>
+                  </optgroup>
+                  <optgroup label="Sci-Fi">
+                    <option value="interstellar">Interstellar</option>
+                    <option value="bladerunner">Blade Runner 2049</option>
+                    <option value="arrival">Arrival</option>
+                    <option value="dune">Dune</option>
+                    <option value="martian">The Martian</option>
+                    <option value="exmachina">Ex Machina</option>
+                    <option value="gravity">Gravity</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label">Your Rating</label>
+                <div class="rating">
+                  <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars">☆</label>
+                  <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars">☆☆</label>
+                  <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars">☆☆☆</label>
+                  <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars">☆☆☆☆</label>
+                  <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">☆☆☆☆☆</label>
+                </div>
+                <small class="form-text text-muted">Click on the stars to rate the movie</small>
+              </div>
+
+              <div class="mb-4">
+                <label for="reviewTitle" class="form-label">Review Title</label>
+                <input type="text" class="form-control" id="reviewTitle" placeholder="Give your review a catchy title" required>
+              </div>
+
+              <div class="mb-4">
+                <label for="reviewText" class="form-label">Your Review</label>
+                <textarea class="form-control" id="reviewText" rows="8" placeholder="Share your thoughts about the movie. What did you like? What didn't you like? Would you recommend it?" required></textarea>
+                <small class="form-text text-muted">Minimum 50 characters. Be respectful and avoid spoilers if possible.</small>
+              </div>
+
+              <div class="mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="spoilerAlert" name="spoilerAlert">
+                  <label class="form-check-label" for="spoilerAlert">
+                    This review contains spoilers
+                  </label>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="reviewerName" class="form-label">Your Name (Optional)</label>
+                <input type="text" class="form-control" id="reviewerName" placeholder="How should we credit you?">
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Submit Review</button>
+                <button type="reset" class="btn btn-secondary btn-lg ms-3">Clear Form</button>
+              </div>
+            </form>
+
+            <div id="successMessage" class="alert alert-success mt-4" style="display: none;">
+              <h4 class="alert-heading">Review Submitted Successfully!</h4>
+              <p>Thank you for sharing your thoughts. Your review will be reviewed by our team before being published.</p>
+              <hr>
+              <p class="mb-0">Want to submit another review? <a href="#" onclick="resetForm()">Click here</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Submit Review Section -->
+
+    <!-- Footer -->
+    <section>
+      <footer class="text-center text-lg-start text-white" style="background-color: #111611">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">MOVIE SPHERE</h6>
+                <p>
+                  At MovieSphere, we dive deep into the world of cinema to bring you honest, insightful, and passionate reviews of movies from every genre and era.
+                  Whether you're a casual viewer or a true cinephile, our mission is to help you discover films worth your time and spark conversations that go beyond the credits.
+                  From blockbuster hits to hidden gems, we critique, analyze, and celebrate the art of storytelling on screen
+                </p>
+              </div>
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                <p><i class="fas fa-envelope mr-3"></i> press@MovieSphere.com</p>
+                <p><i class="fas fa-phone mr-3"></i> 206 318 7100</p>
+                <p><i class="fas fa-print mr-3"></i> +44 20 3047 2656</p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                <!-- Facebook -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="https://www.facebook.com/" target="_blank" role="button"><i class="bi bi-facebook"></i></a>
+
+                <!-- Youtube -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #a30000" href="https://www.youtube.com/" target="_blank" role="button"><i class="bi bi-youtube"></i></a>
+
+                <!-- pintress -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #a30000" href="https://www.pinterest.com/" target="_blank" role="button"><i class="bi bi-pinterest"></i></a>
+
+                <!-- Spotify -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #0a7e00" href="https://open.spotify.com/" target="_blank" role="button"><i class="bi bi-spotify"></i></a>
+              </div>
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #111611">
+          <a> © 2025 Copyright MOVIE SPHERE. All rights reserved</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- End of .container -->
+    </section>
+    <!-- End Footer -->
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-6 d-flex align-items-center justify-content-center bg-dark text-white p-4">
+                <div class="text-center">
+                  <img src="Images/logo.png" alt="Logo" width="100" height="94" class="mb-3">
+                  <h4>Welcome Back</h4>
+                  <p>Sign in to your account to access exclusive movie reviews and features.</p>
+                </div>
+              </div>
+              <div class="col-md-6 p-4 d-flex align-items-center">
+                <div class="w-100">
+                  <div class="d-flex justify-content-end mb-3">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <h3 class="mb-4">Login</h3>
+                  <form>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="rememberMe">
+                      <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                  </form>
+                  <div class="text-center mt-3">
+                    <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal" data-bs-dismiss="modal">Forgot password?</a>
+                  </div>
+                  <hr>
+                  <div class="text-center">
+                    <p>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal" class="text-decoration-none">Register here</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-6 d-flex align-items-center justify-content-center bg-dark text-white p-4">
+                <div class="text-center">
+                  <img src="Images/logo.png" alt="Logo" width="100" height="94" class="mb-3">
+                  <h4>Join Us</h4>
+                  <p>Create your account to start exploring and reviewing movies.</p>
+                </div>
+              </div>
+              <div class="col-md-6 p-4 d-flex align-items-center">
+                <div class="w-100">
+                  <div class="d-flex justify-content-end mb-3">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <h3 class="mb-4">Register</h3>
+                  <form>
+                    <div class="mb-3">
+                      <label for="regName" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="regName" placeholder="Enter your full name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="regEmail" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="regEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="regPassword" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="regPassword" placeholder="Create a password">
+                    </div>
+                    <div class="mb-3">
+                      <label for="regConfirmPassword" class="form-label">Confirm Password</label>
+                      <input type="password" class="form-control" id="regConfirmPassword" placeholder="Confirm your password">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="agreeTerms">
+                      <label class="form-check-label" for="agreeTerms">I agree to the terms and conditions</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Register</button>
+                  </form>
+                  <div class="text-center mt-3">
+                    <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal" data-bs-dismiss="modal">Forgot password?</a>
+                  </div>
+                  <hr>
+                  <div class="text-center">
+                    <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal" class="text-decoration-none">Login here</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-6 d-flex align-items-center justify-content-center bg-dark text-white p-4">
+                <div class="text-center">
+                  <img src="Images/logo.png" alt="Logo" width="100" height="94" class="mb-3">
+                  <h4>Reset Password</h4>
+                  <p>Enter your email to receive a password reset link.</p>
+                </div>
+              </div>
+              <div class="col-md-6 p-4 d-flex align-items-center">
+                <div class="w-100">
+                  <div class="d-flex justify-content-end mb-3">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <h3 class="mb-4">Forgot Password</h3>
+                  <form>
+                    <div class="mb-3">
+                      <label for="resetEmail" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="resetEmail" placeholder="Enter your email">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Reset Link</button>
+                  </form>
+                  <div class="text-center mt-3">
+                    <p>Remember your password? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal" class="text-decoration-none">Login here</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Star rating functionality
+      const stars = document.querySelectorAll('.rating input');
+      stars.forEach(star => {
+        star.addEventListener('change', function() {
+          const rating = this.value;
+          console.log('Selected rating:', rating);
+        });
+      });
+
+      // Form submission
+      document.getElementById('reviewForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Basic validation
+        const movie = document.getElementById('movieSelect').value;
+        const rating = document.querySelector('input[name="rating"]:checked');
+        const title = document.getElementById('reviewTitle').value.trim();
+        const review = document.getElementById('reviewText').value.trim();
+        
+        if (!movie) {
+          alert('Please select a movie.');
+          return;
+        }
+        
+        if (!rating) {
+          alert('Please provide a rating.');
+          return;
+        }
+        
+        if (title.length < 5) {
+          alert('Please provide a review title with at least 5 characters.');
+          return;
+        }
+        
+        if (review.length < 50) {
+          alert('Please provide a review with at least 50 characters.');
+          return;
+        }
+        
+        // Simulate form submission
+        console.log('Review submitted:', {
+          movie: movie,
+          rating: rating.value,
+          title: title,
+          review: review,
+          spoiler: document.getElementById('spoilerAlert').checked,
+          reviewer: document.getElementById('reviewerName').value.trim()
+        });
+        
+        // Show success message
+        document.getElementById('reviewForm').style.display = 'none';
+        document.getElementById('successMessage').style.display = 'block';
+      });
+
+      function resetForm() {
+        document.getElementById('reviewForm').style.display = 'block';
+        document.getElementById('successMessage').style.display = 'none';
+        document.getElementById('reviewForm').reset();
+      }
+    </script>
+  </body>
+</html>
