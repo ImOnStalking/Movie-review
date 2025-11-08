@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   </head>
   <body>
-    <!-- nav -->
+
+   <!-- nav -->
     <section>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 sticky-top" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary pb-3 fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
           <div class="collapse navbar-collapse text-white d-flex justify-content-center" id="navbarSupportedContent">
             <a class="navbar-brand me-3" href="index.html">
@@ -50,7 +51,7 @@
                  <img src="Images/profile.jpg" alt="">
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item text-center" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</a></li>
+                  <li><a class="dropdown-item text-center" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
                   <li><a class="dropdown-item text-center" href="#" data-bs-toggle="modal" data-bs-target="#registerModal">REGISTER</a></li>
                 </ul>
               </li>
@@ -199,7 +200,7 @@
               <div class="col-md-6 d-flex align-items-center justify-content-center bg-dark text-white p-4">
                 <div class="text-center">
                   <img src="Images/logo.png" alt="Logo" width="100" height="94" class="mb-3">
-                  <h4>Welcome Back</h4>
+                  <h4>Welcome</h4>
                   <p>Sign in to your account to access exclusive movie reviews and features.</p>
                 </div>
               </div>
@@ -212,18 +213,18 @@
                   <form>
                     <div class="mb-3">
                       <label for="email" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                     </div>
                     <div class="mb-3">
                       <label for="password" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                      <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
                     </div>
                     <div class="mb-3 form-check">
                       <input type="checkbox" class="form-check-input" id="rememberMe">
                       <label class="form-check-label" for="rememberMe">Remember me</label>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Login</button>
-                  </form>
+                  </form> 
                   <div class="text-center mt-3">
                     <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal" data-bs-dismiss="modal">Forgot password?</a>
                   </div>
@@ -261,19 +262,19 @@
                   <form>
                     <div class="mb-3">
                       <label for="regName" class="form-label">Full Name</label>
-                      <input type="text" class="form-control" id="regName" placeholder="Enter your full name">
+                      <input type="text" class="form-control" id="regName" placeholder="Enter your full name" required>
                     </div>
                     <div class="mb-3">
                       <label for="regEmail" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="regEmail" placeholder="Enter your email">
+                      <input type="email" class="form-control" id="regEmail" placeholder="Enter your email" required>
                     </div>
                     <div class="mb-3">
                       <label for="regPassword" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="regPassword" placeholder="Create a password">
+                      <input type="password" class="form-control" id="regPassword" placeholder="Create a password" required>
                     </div>
                     <div class="mb-3">
                       <label for="regConfirmPassword" class="form-label">Confirm Password</label>
-                      <input type="password" class="form-control" id="regConfirmPassword" placeholder="Confirm your password">
+                      <input type="password" class="form-control" id="regConfirmPassword" placeholder="Confirm your password" required>
                     </div>
                     <div class="mb-3 form-check">
                       <input type="checkbox" class="form-check-input" id="agreeTerms">
@@ -320,7 +321,82 @@
                       <label for="resetEmail" class="form-label">Email address</label>
                       <input type="email" class="form-control" id="resetEmail" placeholder="Enter your email">
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Send Reset Link</button>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#forgotPasswordCodeModal"><button type="submit" class="btn btn-primary w-100">Send Reset Link</button></a>
+                  </form>
+                  <div class="text-center mt-3">
+                    <p>Remember your password? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal" class="text-decoration-none">Login here</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- forgot password code modal -->
+    <div class="modal fade" id="forgotPasswordCodeModal" tabindex="-1" aria-labelledby="forgotPasswordCodeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-6 d-flex align-items-center justify-content-center bg-dark text-white p-4">
+                <div class="text-center">
+                  <img src="Images/logo.png" alt="Logo" width="100" height="94" class="mb-3">
+                  <h4>Reset Password</h4>
+                  <p>Enter The Code that has Been Sent.</p>
+                </div>
+              </div>
+              <div class="col-md-6 p-4 d-flex align-items-center">
+                <div class="w-100">
+                  <div class="d-flex justify-content-end mb-3">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <h3 class="mb-4">Forgot Password</h3>
+                  <form>
+                    <div class="mb-3">
+                      <label for="resetEmail" class="form-label">Code</label>
+                      <input type="email" class="form-control" id="resetEmail" placeholder="Enter Code">
+                    </div>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#EnterNewPass"><button type="submit" class="btn btn-primary w-100">Reset Password</button></a>
+                  </form>
+                  <div class="text-center mt-3">
+                    <p>Remember your password? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal" class="text-decoration-none">Login here</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Enter New Password modal -->
+    <div class="modal fade" id="EnterNewPass" tabindex="-1" aria-labelledby="EnterNewPassword" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div class="col-md-6 d-flex align-items-center justify-content-center bg-dark text-white p-4">
+                <div class="text-center">
+                  <img src="Images/logo.png" alt="Logo" width="100" height="94" class="mb-3">
+                  <h4>Reset Password</h4>
+                  <p>Enter A New Password</p>
+                </div>
+              </div>
+              <div class="col-md-6 p-4 d-flex align-items-center">
+                <div class="w-100">
+                  <div class="d-flex justify-content-end mb-3">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <h3 class="mb-4">Forgot Password</h3>
+                  <form>
+                    <div class="mb-3">
+                      <label for="resetEmail" class="form-label">New Password</label>
+                      <input type="password" class="form-control mb-2" id="resetEmail" placeholder="Enter New Password" required>
+                      <input type="password" class="form-control" id="resetEmail" placeholder="Re-enter the new Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Reset Password</button>
                   </form>
                   <div class="text-center mt-3">
                     <p>Remember your password? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal" class="text-decoration-none">Login here</a></p>

@@ -25,7 +25,7 @@
 }
 
 /* Responsive search bar */
-@media (max-width: 767px) {
+@media (max-width: 1920px) {
     .search-input {
         width: 100% !important;
     }
@@ -70,3 +70,10 @@
 
 /* ----------------------------------------------------------------------- */
 
+/* padding for navbar */
+body {
+    padding-top: 70px;
+}
+/* end */
+
+/* ----------------------------------------------------------------------- */
