@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   </head>
   <body style="background-color: rgb(255, 255, 255);">
     <!-- nav -->
@@ -40,7 +41,7 @@
                 </ul>
               </li>
             </ul>
-            <form class="d-flex me-3 px-3" role="search">
+            <form class="d-flex me-3 px-3" id="searchbar" role="search">
               <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
             </form>
@@ -66,12 +67,12 @@
     <section class="hero bg-dark text-white py-5">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6">
+          <div class="col-lg-6 animate__animated animate__fadeInLeft">
             <h1 class="display-4 fw-bold">Welcome to MOVIE SPHERE</h1>
             <p class="lead">Discover, review, and discuss the latest movies. Your ultimate destination for cinematic insights.</p>
-            <a href="Movie-list.html" class="btn btn-primary btn-lg my-3">Explore Movies</a>
+            <a href="Movie-list.html" class="btn btn-primary btn-lg my-3 animate__animated animate__bounceIn">Explore Movies</a>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 animate__animated animate__fadeInRight">
             <img src="Images/logo.png" alt="Hero Movie" class="img-fluid rounded ">
           </div>
         </div>
@@ -82,9 +83,9 @@
     <!-- Featured Movies  -->
     <section id="featured" class="py-5">
       <div class="container">
-        <h2 class="text-center mb-4">Featured Movies</h2>
+        <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Featured Movies</h2>
         <div class="row">
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-1s">
             <div class="card h-100">
               <img src="Images/action/action8.jpg" class="card-img-top" alt="Movie 1">
               <div class="card-body">
@@ -94,7 +95,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-2s">
             <div class="card h-100">
               <img src="Images/comedy/comedy3.jpg" class="card-img-top" alt="Movie 2">
               <div class="card-body">
@@ -104,7 +105,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-3s">
             <div class="card h-100">
               <img src="Images/Sci-fi/Sci-fi4.jpg" class="card-img-top" alt="Movie 3">
               <div class="card-body">
@@ -122,9 +123,9 @@
     <!-- Latest Reviews  -->
     <section class="py-5">
       <div class="container">
-        <h2 class="text-center mb-4">Latest Reviews</h2>
+        <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Latest Reviews</h2>
         <div class="row">
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-4 animate__animated animate__fadeInLeft animate__delay-1s">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Review: Oppenheimer</h5>
@@ -136,7 +137,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-4 animate__animated animate__fadeInRight animate__delay-1s">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Review: Barbie</h5>
@@ -148,7 +149,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-4 animate__animated animate__fadeInLeft animate__delay-2s">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Review: Dune: Part Two</h5>
@@ -160,7 +161,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-4 animate__animated animate__fadeInRight animate__delay-2s">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Review: The Batman</h5>
@@ -172,7 +173,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 mb-4 animate__animated animate__fadeInLeft animate__delay-3s">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Review: Avatar: The Way of Water</h5>
@@ -184,7 +185,7 @@
               </div>
             </div>
           </div>
-          <div class="text-center">
+          <div class="text-center animate__animated animate__fadeInUp animate__delay-4s">
             <a href="submit-review.html"><button class="btn btn-primary"><i class="bi bi-pencil-fill"></i> Create A Movie Review</button></a>
           </div>
         </div>
@@ -195,9 +196,9 @@
     <!-- Categories  -->
     <section class="py-5">
       <div class="container">
-        <h2 class="text-center mb-4">Browse by Category</h2>
+        <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Browse by Category</h2>
         <div class="row text-center">
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3 mb-3 animate__animated animate__fadeInUp animate__delay-1s">
             <a href="action.html" class="text-decoration-none">
               <div class="card h-100">
                 <div class="card-body">
@@ -207,7 +208,7 @@
               </div>
             </a>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3 mb-3 animate__animated animate__fadeInUp animate__delay-2s">
             <a href="romance.html" class="text-decoration-none">
               <div class="card h-100">
                 <div class="card-body">
@@ -217,7 +218,7 @@
               </div>
             </a>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3 mb-3 animate__animated animate__fadeInUp animate__delay-3s">
             <a href="sci-fi.html" class="text-decoration-none">
               <div class="card h-100">
                 <div class="card-body">
@@ -227,7 +228,7 @@
               </div>
             </a>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-3 mb-3 animate__animated animate__fadeInUp animate__delay-4s">
             <a href="comedy.html" class="text-decoration-none">
               <div class="card h-100">
                 <div class="card-body">
