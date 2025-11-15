@@ -21,13 +21,13 @@
 
 /* search bar styling */
 .search-input {
-    width: 700px;
+    width: auto;
 }
 
 /* Responsive search bar */
-@media (max-width: 1920px) {
+@media (max-width: 800px) {
     .search-input {
-        width: 100% !important;
+        width: 50% !important;
     }
 }
 /* end */
@@ -78,4 +78,3 @@ body {
 /* end */
 
 /* ----------------------------------------------------------------------- */
-

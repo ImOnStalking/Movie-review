@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-  <body style="background-color: rgb(255, 255, 255);">
+  <body style="background-color: white;">
     <!-- nav -->
     <section>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 d-flex fixed-top" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary pb-3 fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
           <div class="collapse navbar-collapse text-white d-flex justify-content-center" id="navbarSupportedContent">
             <a class="navbar-brand me-3" href="index.html">
@@ -41,12 +42,12 @@
                 </ul>
               </li>
             </ul>
-            <form class="d-flex me-3 px-3" id="searchbar" role="search">
+            <form class="d-flex me-3 px-3" role="search">
               <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
             </form>
-            <ul class="navbar-nav">
                 <button class="nav-link text-white bg-transparent border-0" id="Lightmode"><i class="bi bi-brightness-high-fill"></i></button>
+            <ul class="navbar-nav">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  <img src="Images/profile.jpg" alt="">
@@ -85,8 +86,8 @@
       <div class="container">
         <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Featured Movies</h2>
         <div class="row">
-          <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-1s">
-            <div class="card h-100">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100" >
               <img src="Images/action/action8.jpg" class="card-img-top" alt="Movie 1">
               <div class="card-body">
                 <h5 class="card-title">FAST X</h5>
@@ -95,7 +96,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="350">
             <div class="card h-100">
               <img src="Images/comedy/comedy3.jpg" class="card-img-top" alt="Movie 2">
               <div class="card-body">
@@ -105,7 +106,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-3s">
+          <div class="col-md-4 mb-4"  data-aos="fade-up" data-aos-delay="400">
             <div class="card h-100">
               <img src="Images/Sci-fi/Sci-fi4.jpg" class="card-img-top" alt="Movie 3">
               <div class="card-body">
@@ -140,7 +141,7 @@
           <div class="col-md-6 mb-4 animate__animated animate__fadeInRight animate__delay-1s">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Review: Barbie</h5>
+                <h5 class="card-title">Review: Fast X</h5>
                 <p class="card-text">"A fun and satirical take on modern society through the eyes of a doll..."</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <small class="text-muted">By Jane Smith</small>
@@ -327,7 +328,7 @@
                   <h3 class="mb-4">Login</h3>
                   <form>
                     <div class="mb-3">
-                      <label for="email" class="form-label">Email address</label>
+                      <label for="email" class="form-label login-input">Email address</label>
                       <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                     </div>
                     <div class="mb-3">
@@ -526,5 +527,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="JS/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
