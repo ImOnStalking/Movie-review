@@ -14,11 +14,7 @@ button.addEventListener("click", function() {
     }
 });
 
-//welcome alert
-window.addEventListener("load", function() {
 
-    alert("Welcome to Movie Sphere! Enjoy exploring movies.");
-});
 
 //login modal functionality
 var loginButton = document.querySelector("#loginModal button[type='submit']");
@@ -26,13 +22,20 @@ if (loginButton) {
     loginButton.addEventListener("click", function(event) {
         event.preventDefault();
         var emailInput = document.querySelector("#email");
-        var passwordInput = document.querySelector("#password");
-        if (emailInput.value && passwordInput.value) {
-            alert("Login successful! Welcome back "+(emailInput.value));
+        if (emailInput.value) {
+            alert("Login successful! Welcome back " + emailInput.value);
             window.location.href = "index.html";
         } else {
             alert("Please fill in all fields.");
         }
+    });
+}
+
+// Beginner level JS 3: Alert when opening login modal
+var loginModal = document.getElementById('loginModal');
+if (loginModal) {
+    loginModal.addEventListener('show.bs.modal', function () {
+        alert("Login to access personalized features!");
     });
 }
 
