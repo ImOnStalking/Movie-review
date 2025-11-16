@@ -31,7 +31,7 @@ if (loginButton) {
     });
 }
 
-// Beginner level JS 3: Alert when opening login modal
+// Alert on login show
 var loginModal = document.getElementById('loginModal');
 if (loginModal) {
     loginModal.addEventListener('show.bs.modal', function () {
